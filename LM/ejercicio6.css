@@ -1,0 +1,57 @@
+body{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(241, 236, 236);
+}
+/*Vamos a ajustar el header para que todos los elementos salga alineados
+la caja de busqueda se nos ha quedado en medio cuando tiene que ser más larga y luego los botones de la campanita están desalineados*/
+header{
+    background-color: white;
+    padding: 0.5em;/* Voy a darle un padding al header para que los contenedores se vean más espaciados*/
+    margin-bottom: 12px;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+/* factor de crecimiento 1 */
+.flex_grow1{
+   flex-grow: 1;
+}
+.flex_grow2{
+    flex-grow: 2;
+ }
+ #video{
+    width: 854px;
+    height: 480px;
+ }
+ .video_miniatura{
+   width: 120px; 
+   height:68px;
+   
+ }
+ #lateral{
+  background-color: white;
+  margin-left: 12px 12px 0 12px;
+ }
+ .video_mini{
+  padding: 12px;/*Me aparece mucha altura entre los vídeos así que podemos hacer un padding top right botton left*/
+ }
+ h5{
+  /* los margin son muy grandes de estas etiquetas <h> los tengo que anular*/
+  margin:0;
+  
+ }
+ p{
+  margin: 0; /* los margin son muy grandes de estas etiquetas <p> los tengo que anular*/
+  font-size: x-small;
+ }
+ .textos_miniatura{
+  margin-left: 10px;
+ }
