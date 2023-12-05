@@ -1,0 +1,70 @@
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.categorias{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(175, 171, 171);
+    border-radius: 8px;
+    align-items: center;
+    padding: 2px 25px 2px 25px;
+    margin:0.5em ;
+   
+}
+/*align-items lo que provoca es que los items de un contenedor flex queden centrados en el eje perpendicular de la dirección del flex */
+
+/*Clase miniatura apartado 13*/
+.miniatura{
+    width: 128px;
+    height: 128px;
+    
+}
+/* apartado 14*/
+.botones{
+    width: 32px;
+    height: 32px;
+}
+/* Retoques para que el contenedor del formulario de busqueda se quede lo más parecido*/
+#formulario_busqueda{
+    padding: 1em;
+}
+#buscar_articulo{
+    margin: 0 1em 0 1em;
+}
+.item_seleccionado{
+    background-color: rgb(164, 245, 245);
+}
+/*pseudoclase aquellas clases que expresan un estatus especial del item al que se están refiriendo y se van a aplicar solo si el item está bajo unas circustancias*/
+
+.boton:hover{
+background-color: rgb(117, 243, 243)
+
+}
+.item{
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: grey;
+    padding: 1em;
+    margin-top: 1em;
+}
+h2{
+    margin: 0 0 0 0;
+}
+h5{
+   margin: 0 0 1em 0;
+
+}
+p{
+    margin: 0 0 0 0;
+}
+header{
+    margin-bottom: 1em;
+} 

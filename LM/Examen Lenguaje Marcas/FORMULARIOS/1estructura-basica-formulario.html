@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura básica de un formulario</title>
+</head>
+<body>
+    <!--la estructua básica de un formulario se compone
+    form etiqueta que engloba nuestro formulario
+label sirve para escribir el nombre del campo a rellenar debe tener el atributo for al cual se le indica un id que lo que hará será emparejar el label con su input correspondiente
+input sirve para crear un campo que permitirá al usuario interactuar
+button crea un botón que permitirá enviar el formulario
+El comportamiento de un formulario por defecto es recargar la página, normalmente con action pausamos el envio con js y después lo enviamos js-->
+
+<form>
+    <label>Nombre</label>
+    <input>
+    <button>Enviar formulario</button>
+</form>
+
+<!--como unir un label a un input-->
+<form>
+    <label for="name">Nombre</label>
+    <input id="name">
+    <button>Enviar formulario</button>
+</form>
+<!--Diferentes tipos de inputs https://www.w3schools.com/tags/tag_input.asp-->
+<form>
+    <input type="button" value="Enviar"
+    >
+    <button>Enviar</button>
+</form>
+<!--a efectos practicos los dos parecen iguales pero hay una gran diferencia, un input type=button no sirve para enviar el formulario sin embargo la etiqueta button, si recarga la página y si envía el formulario.Si queremos que se pueda enviar el tipo que hay que poner es submit (envía el formulario) -->
+
+<!--date se utiliza para introducir un fecha
+time se utiliza para introducir una hora
+month se utiliza para introducir un mes
+-->
+<form >
+    <input type="date">
+    <input type="time">
+    <input type="month">
+    <input type="week">
+</form>
+<!--Etiquetas de formulario útiles para móviles, el tipo password es una forma que tiene el navegador para ocultar lo que escribimos-->
+<form>
+<div>
+    <label >search
+        <input type="search">
+    </label>
+</div>
+<div>
+    <label >teléfono
+        <input type="tel">
+    </label>
+</div>
+<div>
+    <label >email
+        <input type="email">
+    </label>
+</div>
+<div>
+    <label >password
+        <input type="password">
+    </label>
+</div>
+<div>
+    <label >url
+        <input type="url">
+    </label>
+</div>
+<!--podemos probarlo en el móvil
+192.168.56.1:3000/formularios-->
+</form>
+<form>
+    <input type="color">
+    <input type="number">
+    <input type="range" step="10" min="0" max="20"
+    >
+    <input type="reset">
+    <input type="text">
+</form>
+</body>
+</html>

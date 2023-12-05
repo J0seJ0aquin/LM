@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inputs de selección</title>
+    </head>
+    <body>
+        <!--radio Permite seleccionar una única opción de una lista de opciones relacionadas, para ello tenemos el atributo name(le informamos al navegador que los tres input pertenecen a la misma categoría y por tanto, podemos seleccionar uno de los tres)
+        checkbox Permite seleccionar varias opciones de una lista de opciones relacionadas, el atributo checked es una atributo booleano para que salga por defecto uno chequeado.
+        Hay otro atributo obligatorio value, esto nos sirve para decirle al formulario cuando lo enviemos, que valor es el que contiene el elemento.
+    select crea una lista de opciones donde podemos seleccionar una o varias opciones
+cada opción irá dentro de una etiqueta <option> 
+    Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup>con el atributo label para nombrar la categoria  -->
+        <h1>Elementos seleccionables</h1>
+        <form>
+            <h2>Género. Formularios de tipo radio</h2>
+        <label>Masculino
+            <input type="radio" name="gender" value="Masculino" checked>
+        </label>
+        <label>femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>desconocido
+            <input type="radio" name="gender" value="desconocido">
+        </label>
+        </form>
+        <form>
+           <!--Con el atributo name el servidor sabría la categoría a la que pertenece y tomaría el valor que está chequeado por el usuario por otra parte el atributo checked a diferencia de radio este puede ponerse en varios-->
+            <h2>Formularios de tipo checkbox</h2>
+            <label>
+                html
+                <input type="checkbox" name="languages" value="html" checked>
+            </label>
+            <label>
+                css
+                <input type="checkbox" name="languages" value="css" checked
+                >
+            </label>
+            <label>
+                JavaScript
+                <input type="checkbox" name="languages" value="JavaScript">
+            </label>
+        </form>
+
+    </body>
+    </html>

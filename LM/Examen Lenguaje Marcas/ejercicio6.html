@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Carmen Martínez">
+    <title>Ejercicio 6 </title>
+    <link rel="stylesheet" href="ejercicio6.css">
+
+</head>
+<body>
+    <header class="flex_row">
+        <!--Quiero que el comportamiento de mis flex_row sea centrarlos con el eje perpendicular, esto se consigue con align-items: center-->
+        <div>
+            <img src="recursos/ico_3barras.png" alt="">
+            <img src="recursos/logo_yt.png" alt="">
+        </div>
+        <div class="flex_grow2 flex_row"><!--El poner flex_row en el contenedor padre del input es para que pueda la caja input crecer con la clase fles_grow1 o 2 la que quiera-->
+            <input id="busqueda_video" class="flex_grow1" type="search">
+            
+        </div>
+        <!--En primer lugar he dejado una capa vacía y tengo que conseguir que la capa anterior crezca el doble que la capa vacía-->
+        <div class="flex_grow1">&nbsp;</div>
+
+        <div class="flex_row"><!--necesito poner a este div que sea flex_row para que me coja la propiedad de que todos los elementos se alineen centrados-->
+            <button>Subir</button>
+            <img src="recursos/ico_campana.png" alt="">
+            <img src="recursos/ico_usuario.png" alt="">
+        </div>
+    </header>
+    <main class="flex_row">
+       <div>
+            <img id="video"src="recursos/img_video.jpg" alt="">
+       </div>
+       <div id="lateral" class="flex_column">
+            <div class="flex_row video_mini">
+                <div>
+                <img class="video_miniatura" src="recursos/minivid1.jpg" alt="">
+                </div>
+                <div class="textos_miniatura">
+                    <h5>Gran Premio de Europa Valencia 2012 ( español )
+                    </h5>
+                    <p>de ElReyGuiri <br>
+                    167.807 visualizaciones
+                    </p>
+                </div>
+            </div>
+            <div class="flex_row video_mini">
+                <div>
+                <img class="video_miniatura" src="recursos/minivid2.jpg" alt="">
+                </div>
+                <div class="textos_miniatura"><h5>F1 2014 Hungria Alonso vs Hamilton vs Ricciardo</h5>
+                    <p>de ElReyGuiri <br>
+                    36.997 visualizaciones</p></div>
+            </div>
+            <div class="flex_row video_mini">
+                <div>
+                    <img class="video_miniatura" src="recursos/minivid3.jpg" alt="">
+                </div>
+                <div class="textos_miniatura"><h5>Jenson Button Bromea con Fernando Alonso sobre su Futuro en McLaren 2014</h5>
+                    <p>de TvInformativa <br>
+                    49.200 visualizaciones</p></div>
+            </div>
+            <div class="flex_row video_mini">
+                <div><img class="video_miniatura" src="recursos/minivid4.jpg" alt=""></div>
+                <div class="textos_miniatura"><h5>F1 2005 GP4 Japón | Velocidad total ! #16</h5>
+                    <p>de ElReyGuiri <br>
+                    9.120 visualizaciones</p></div>
+            </div>
+            <div class="flex_row video_mini">
+                <div><img class="video_miniatura" src="recursos/minivid5.jpg" alt=""></div>
+                <div class="textos_miniatura"><h5>Fernando Alonso | Mejores años (2001-2006)</h5></div>
+            </div>
+
+       </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia entre enviar GET VS POST</title>
+    <!--Para la programación con js saber la diferencia entre el método get y post es importante y como leer esa información
+    pondremos el atributo action con un archivo que no existe, nos dará error pero no importa. Después nos aparece el método GET es el método por defecto, el método get es el método que se ejecuta cuando nosotros entramos a una página a través de la url es decir a través de aquí arriba si le doy a enviar en la dirección pone enviar.html?No se encuentra el archivo . Este es el método que tienen todas las páginas cuando nosotros entramos a través de la url
+Por otra parte tenemos el envio POST que es el envio de formularios a través de la página, nos da un error 405 significa que él ha intentado enviar esta información pero la información no ha llegado no ha encontrado el archivo para enviarle esa información entonces.
+vamos a cambiar al método get en la dirección nos pone enviar.html?después de esta interrogación irían los campos que se están enviando del formulario por eso os he dicho en varias ocasiones que el atributo name es obligatorio porque si nosotros no lo ponemos no estamos enviando información realmente entonces aquí vamos a poner name igual a name si ponemos carmen martínez veríamos la forma que se están enviando datos a través de la url (get)
+--> 
+</head>
+<body>
+   <form action="enviar.html" method="post">
+    <label for="name">Nombre</label>
+    <input type="text" id="name" name="name">
+    <label for="surname">Apellido</label>
+    <input type="text" id="surname" name="surname">
+    <input type="submit">
+
+
+   </form> 
+    
+</body>
+</html>

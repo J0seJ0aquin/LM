@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <!--<select name="languajes" multiple>
+            <option value="html">HTML</option>
+        <option value="html">HTML</option>
+        </select>
+    select crea una lista de opciones donde podemos seleccionar una o varias opciones
+cada opción va dentro de una etiqueta option, si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta optgroup con el atributo label para nombrar la categoría-->
+        <select name="mascotas" multiple>
+         <optgroup label="4 patas">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+        </optgroup>
+        <optgroup label="aves">
+            <option value="canario">Canario</option>
+            <option value="loro">loro</option>
+            
+        </optgroup>
+        <optgroup label="otras">
+            <option value="serpiente">Serpiente</option>
+            <option value="tarántula">Tarántula</option>
+        </optgroup>
+        </select>
+        
+    </form>
+    <form>
+        <!--Otro elemento seleccionable que vino con html5 es el data list similares a los select solo que incluyen un filtro para que se pueda buscar de forma más sencilla
+        utilizamos un input de tipo list y con el atributo list le ponemos nombre a la lista . La parte más significativa para utilizar un data list en lugar de un select es que tenemos incluido un filtro yo puedo buscar por  Ga-->
+        <input type="list" list="pets">
+        <datalist id="pets">
+            <option value="perro">Descripción del valor perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+            <option value="canario">Canario</option>
+            <option value="loro">loro</option>
+            <option value="serpiente">Serpiente</option>
+            <option value="tarántula">Tarántula</option>
+
+        </datalist>
+      
+    </form>
+    <!--Más elementos para formularios
+    Si quisieramos englobar estos dos campos para que el usuario lo pudiera localizar más facilmente, más entendible para el navegador y para el usuario utilizamos fieldset, estéticamente pone un borde que en CSS se puede cambiar
+legend Representa una etiqueta para el contenido de fieldset (dato personales)-->
+    <br>
+    <form >
+        <fieldset >
+            <legend>datos personales</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="surname">Apellidos</label>
+        <input type="text" id="surname">
+    </fieldset>
+    </form>
+    <!--input de tipo file sirve para cargar archivos que vayamos a enviar a través de formularios pero sin CSS o JS es poco vistoso haría falta el botón de enviar y js para ver el progreso de lo queda por enviar-->
+    <br>
+    <form>
+        <input type="file">
+    </form>
+    <br>
+    <!--textarea se utiliza para introducir texto en un formulario, todo esto desde CSS se podría bloquear-->
+    <form>
+        <label for="message">Mensaje</label>
+        <textarea name="" id="message" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
